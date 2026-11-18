@@ -212,12 +212,10 @@ Now you can simply type `log` in Termux at any time to watch the live output (pr
 
 • **Controls (Skip / Volume) stop working when the screen turns off:**
 Some older Wi-Fi chips aggressively filter incoming network packets when the screen goes completely into hardware sleep mode. To prevent this while still turning the screen off, install the free open-source app FakeStandby from F-Droid:
+
 	1. Open FakeStandby and grant it the required Display over other apps permission.
 	2. In the app's settings, enable Start on boot (and optionally Close on unlock / Start directly) so it automatically blacks out the screen every time the phone powers on.
 	3. Make sure to also exclude FakeStandby from Android's Battery optimization so the system doesn't close it in the background.
-• Slower boot times:
+	
+• **Slower boot times:**
 You can safely disable unused stock apps (like Camera, Calendar, Calculator, or Sound Recorder) via root using pm disable <package_name> to speed up Android's boot sequence. Avoid disabling core system packages (systemui, settings, captiveportallogin, or trebuchet).
-
-<FollowUp>
-Möchtest du noch etwas an dem **GitHub-`README.md`** ändern oder ergänzen, bevor du es hochlädst?
-</FollowUp>
